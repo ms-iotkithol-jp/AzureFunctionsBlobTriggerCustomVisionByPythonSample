@@ -1,0 +1,19 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "myblob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "source-image/{blobname}.{blobext}",
+      "connection": "STORAGE_CONNECTION_STRING_NAME"
+    },
+    {
+      "type": "blob",
+      "direction": "out",
+      "name": "outputBlob",
+      "path": "predicted/{blobname}.json",
+      "connection": "STORAGE_CONNECTION_STRING_NAME"
+    }
+  ]
+}
