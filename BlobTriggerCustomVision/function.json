@@ -5,14 +5,14 @@
       "name": "myblob",
       "type": "blobTrigger",
       "direction": "in",
-      "path": "source-image/{blobname}.{blobext}",
+      "path": "edgephoto/{blobname}.{blobext}",
       "connection": "STORAGE_CONNECTION_STRING_NAME"
     },
     {
       "type": "blob",
       "direction": "out",
       "name": "outputBlob",
-      "path": "predicted/{blobname}.json",
+      "path": "recogninzed/{blobname}.json",
       "connection": "STORAGE_CONNECTION_STRING_NAME"
     }
   ]
